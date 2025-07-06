@@ -1,0 +1,109 @@
+.profile-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(80, 80, 120, 0.10);
+  padding: 28px 24px 20px 24px;
+  margin-bottom: 32px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-top {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  width: 100%;
+  margin-bottom: 18px;
+}
+.profile-pic-label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.profile-pic {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #e1e5e9;
+  border: 3px solid #7284a7;
+  transition: box-shadow 0.2s;
+}
+.profile-pic-label:hover .profile-pic {
+  box-shadow: 0 0 0 4px #bfc8e6;
+}
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.profile-displayName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #222;
+}
+.profile-username {
+  color: #888;
+  font-size: 1rem;
+}
+.profile-bio-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+}
+#profileBio {
+  width: 100%;
+  min-height: 48px;
+  border: 1.5px solid #e1e5e9;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 16px;
+  resize: vertical;
+  background: #f8f9fa;
+  transition: border 0.2s;
+  font-family: inherit;
+}
+#profileBio:focus {
+  border-color: #7284a7;
+  outline: none;
+}
+.profile-save-btn {
+  align-self: flex-end;
+  margin-top: 2px;
+  padding: 8px 22px;
+  background: linear-gradient(135deg, #7284a7 0%, #5553af 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(80, 80, 120, 0.07);
+}
+.profile-save-btn:hover {
+  background: #5553af;
+  box-shadow: 0 4px 16px rgba(80, 80, 120, 0.13);
+}
+
+@media (max-width: 700px) {
+  .profile-card {
+    padding: 18px 8px 14px 8px;
+    border-radius: 12px;
+  }
+  .profile-pic {
+    width: 64px;
+    height: 64px;
+  }
+  .profile-top {
+    gap: 12px;
+  }
+  .profile-displayName {
+    font-size: 1.1rem;
+  }
+} 
