@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Logout functionality
   document.getElementById('logoutBtn').addEventListener('click', function() {
     localStorage.removeItem('currentUser');
     localStorage.removeItem('isLoggedIn');
@@ -21,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
     userBirthday.textContent = 'Birthday: Loading...';
     userPic.src = 'img/default-user.png';
     
-    // Reset Add Friend button
     addFriendBtn.disabled = false;
     addFriendBtn.textContent = 'Add Friend';
     
@@ -60,6 +58,5 @@ document.addEventListener('DOMContentLoaded', function() {
     this.textContent = 'Friend Request Sent';
   });
   
-  // Load initial user
   getRandomUser();
 }); 
