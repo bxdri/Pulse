@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Pulse</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/feed.css" />
+  <link rel="icon" type="image/x-icon" href="img/icon.png" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="sidebar-icons">
+      <a href="feed.html"><img src="img/home-icon.svg" alt="Home" class="sidebar-icon" /></a>
+      <a href="profile.html"><img src="img/profile-icon.svg" alt="Profile" class="sidebar-icon" /></a>
+      <a href="random.html"><img src="img/random-icon.svg" alt="Random User" class="sidebar-icon" /></a>
+      <a href="#"><img src="img/settings-icon.svg" alt="Settings" class="sidebar-icon" /></a>
+    </div>
+  </aside>
+
+  <div class="main-content">
+  <header class="feed-header">
+    <div class="container">
+        <input type="checkbox" id="burgerToggle" class="burger-checkbox" />
+        <label for="burgerToggle" class="burger-menu">
+          <img src="img/burgerbar-icon.svg" alt="Menu" style="width: 24px; height: 24px;" />
+        </label>
+      <img src="img/logo.png" alt="Pulse" class="logo" />
+      <button id="logoutBtn">Logout</button>
+    </div>
+  </header>
+
+  <main class="feed-main">
+    <section class="create-post">
+        <div class="create-post-row">
+          <img src="img/default-user.png" alt="User" class="create-avatar" />
+      <textarea id="postContent" placeholder="What's on your mind?"></textarea>
+        </div>
+        <div class="create-post-actions">
+      <button id="postBtn">Post</button>
+        </div>
+    </section>
+
+    <section class="posts" id="posts"></section>
+  </main>
+
+    <aside class="friends-sidebar">
+      <div class="friends-header">
+        <h3>Friends</h3>
+      </div>
+      <div class="friends-content">
+        <div class="no-friends">
+          <img src="img/friends-icon.svg" alt="Friends" style="width: 32px; height: 32px; margin-bottom: 12px;" />
+          <p>No friends yet</p>
+          <span>Start connecting with people!</span>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <script src="js/feed.js"></script>
+</body>
+</html>

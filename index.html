@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulse</title>
+    <link rel="icon" type="image/x-icon" href="img/icon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+  </head>
+  <body>
+    <main class="auth-container">
+      <div class="auth-split">
+        <div class="logo-section">
+          <img src="img/logo.png" class="logo-large" />
+          <div class="logo-content">
+            <p>Connect with a spark.</p>
+          </div>
+        </div>
+
+        <div class="auth-card">
+          <header class="auth-header">
+            <h2>Create Account</h2>
+          </header>
+
+          <form class="auth-form" id="registerForm">
+            <div class="form-group">
+              <label for="displayName">Display Name</label>
+              <input type="text" id="displayName" name="displayName" required />
+              <span class="error-message" id="displayNameError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" required />
+              <span class="error-message" id="usernameError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required />
+              <span class="error-message" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required />
+
+              <span class="error-message" id="passwordError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="confirmPassword">Confirm Password</label>
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                required
+              />
+              <span class="error-message" id="confirmPasswordError"></span>
+            </div>
+
+            <button type="submit" class="btn-primary">Create Account</button>
+          </form>
+
+          <footer class="auth-footer">
+            <p>
+              Already have an account?
+              <a href="login.html" class="link">Sign In</a>
+            </p>
+          </footer>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/auth.js"></script>
+  </body>
+</html>

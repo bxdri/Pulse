@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random User | Pulse</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/feed.css" />
+  <link rel="stylesheet" href="css/random.css" />
+  <link rel="icon" type="image/x-icon" href="img/icon.png" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="sidebar-icons">
+      <a href="feed.html"><img src="img/home-icon.svg" alt="Home" class="sidebar-icon" /></a>
+      <a href="profile.html"><img src="img/profile-icon.svg" alt="Profile" class="sidebar-icon" /></a>
+      <a href="random.html"><img src="img/random-icon.svg" alt="Random User" class="sidebar-icon" /></a>
+      <a href="#"><img src="img/settings-icon.svg" alt="Settings" class="sidebar-icon" /></a>
+    </div>
+  </aside>
+
+  <div class="main-content">
+    <header class="feed-header">
+      <div class="container">
+        <input type="checkbox" id="burgerToggle" class="burger-checkbox" />
+        <label for="burgerToggle" class="burger-menu">
+          <img src="img/burgerbar-icon.svg" alt="Menu" style="width: 24px; height: 24px;" />
+        </label>
+        <img src="img/logo.png" alt="Pulse" class="logo" />
+        <button id="logoutBtn">Logout</button>
+      </div>
+    </header>
+
+    <main class="feed-main">
+      <section class="random-user-card">
+        <div class="random-user-content">
+          <img id="randomUserPic" src="img/default-user.png" alt="Random User" class="random-user-pic" />
+          <div class="random-user-info">
+            <h2 id="randomUserName">Loading...</h2>
+            <p id="randomUserUsername">@loading</p>
+            <p id="randomUserEmail">loading@email.com</p>
+            <p id="randomUserBirthday">Birthday: Loading...</p>
+          </div>
+          <div class="random-user-buttons">
+            <button id="newUserBtn" class="btn-primary">Next User</button>
+            <button id="addFriendBtn" class="btn-secondary">Add Friend</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/random.js"></script>
+</body>
+</html> 
